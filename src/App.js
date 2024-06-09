@@ -21,7 +21,6 @@ const [movies, setMovies] = useState([]);
     });
   }
 
-
   function handleReview(movie, e) {
     console.log(`App.handleReview(${movie})`);
     service.updateMovie(movie).then((success) => {
@@ -35,7 +34,7 @@ const [movies, setMovies] = useState([]);
 
     <div className="container text-center">
       <div className="row align-items-start">
-        <MovieList movies={movies} onReview={handleReview} />
+        <MovieList movies={movies} handleReview={handleReview} />
       </div>
     </div>
   );

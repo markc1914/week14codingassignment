@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import MovieReview from '../data/MovieReview';
+import Movie from '../data/Movie';
 
 export default function ReviewForm(props) {
 
@@ -23,17 +24,14 @@ export default function ReviewForm(props) {
   const handleSubmitReview = (e) => {
     e.preventDefault();
     const form = e.currentTarget;
-    const formElements = form.elements;
-    for (let formElement of formElements) {
-      console.log(formElement);
-    }
     console.log(`Form Name is ${form.fullName.value}`);
     let fullname = form.fullName.value;
     let email = form.email.value;
     let starRating = form.starRating.value;
-    let detailedReview = form.detailedReview;
+    let detailedReview = form.detailedReview.value;
     let movieReview = new MovieReview(fullname,email,starRating,detailedReview);
     movie.Reviews.push(movieReview);
+    console.log(`Movie reviews amount update is ${movie.Reviews.length}`);
     if(handleReview){
       handleReview(movie,e);
     }
