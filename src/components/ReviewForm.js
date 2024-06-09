@@ -35,7 +35,7 @@ export default function ReviewForm(props) {
     let movieReview = new MovieReview(fullname,email,starRating,detailedReview);
     movie.Reviews.push(movieReview);
     if(handleReview){
-      handleReview;
+      handleReview();
     }
   }
 
