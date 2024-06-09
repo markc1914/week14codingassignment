@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
 import ReviewForm from './ReviewForm';
+import ReviewList from './ReviewList';
 
 export default function MovieCard(props) {
   let movie = props.movie;
@@ -14,9 +14,8 @@ export default function MovieCard(props) {
       </Card.Body>
       <Card.Body>Year Released: {movie.Year}</Card.Body>
       <Card.Body>Reviews</Card.Body>
+      <ReviewList movie={movie}/>
       <ReviewForm movie={movie} handleReview={handleReview}/>
-      <ListGroup className="list-group-flush">
-      </ListGroup>
     </Card>
   );
 }

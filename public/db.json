@@ -6,10 +6,18 @@
       "Year": "1977",
       "Reviews": [
         {
-          "fullName": "Mark",
-          "email": "m@c.co",
+          "fullName": "Mark Cornelius",
+          "email": "mark@markcornelius.com",
           "stars": "3",
-          "detailedReview": "Test"
+          "detailedReview": "Greatest film in the history of cinema",
+          "reviewDate": "2024-06-09T07:12:55.679Z"
+        },
+        {
+          "fullName": "Joe Blow",
+          "email": "joe@blow.com",
+          "stars": "5",
+          "detailedReview": "Better than Citizen Kane",
+          "reviewDate": "2024-06-09T07:14:55.779Z"
         }
       ],
       "Poster": "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg"

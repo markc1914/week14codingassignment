@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import MovieReview from '../data/MovieReview';
-import Movie from '../data/Movie';
 
 export default function ReviewForm(props) {
 

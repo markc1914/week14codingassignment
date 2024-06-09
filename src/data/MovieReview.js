@@ -4,5 +4,6 @@ export default class MovieReview {
     this.email = email;
     this.stars = stars;
     this.detailedReview = detailedReview;
+    this.reviewDate = new Date();
   }
 }
