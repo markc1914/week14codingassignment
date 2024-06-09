@@ -23,20 +23,34 @@
       "Poster": "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg"
     },
     {
+      "id": "tt0080684",
       "Title": "Star Wars: Episode V - The Empire Strikes Back",
       "Year": "1980",
-      "id": "tt0080684",
-      "Type": "movie",
-      "Reviews": [],
-      "Poster": "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+      "Reviews": [
+        {
+          "fullName": "Roger Ebert",
+          "email": "roger@ebert.com",
+          "stars": "5",
+          "detailedReview": "The Sequel was better than the original",
+          "reviewDate": "2024-06-09T13:40:48.327Z"
+        }
+      ]
     },
     {
+      "id": "tt0086190",
       "Title": "Star Wars: Episode VI - Return of the Jedi",
       "Year": "1983",
-      "id": "tt0086190",
-      "Type": "movie",
-      "Reviews": [],
-      "Poster": "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+      "Reviews": [
+        {
+          "fullName": "Gene Siskel",
+          "email": "gene@siskel.com",
+          "stars": "4",
+          "detailedReview": "What a way to end a trilogy",
+          "reviewDate": "2024-06-09T13:42:47.259Z"
+        }
+      ]
     },
     {
       "Title": "Star Wars: Episode VII - The Force Awakens",

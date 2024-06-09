@@ -1,26 +1,6 @@
-import Movie from "../data/Movie";
-
-var util = require('util');
-
 const baseurl = 'http://localhost:3001';
 
 export default class LocalMovieService {
-
-  safeStringify = (obj, indent = 2) => {
-    let cache = [];
-    const retVal = JSON.stringify(
-      obj,
-      (key, value) =>
-        typeof value === "object" && value !== null
-          ? cache.includes(value)
-            ? undefined // Duplicate reference found, discard key
-            : cache.push(value) && value // Store value in our collection
-          : value,
-      indent
-    );
-    cache = null;
-    return retVal;
-  };
 
   async all() {
     let url = `${baseurl}/Movies`;
@@ -40,10 +20,9 @@ export default class LocalMovieService {
   }
 
   async updateMovie(movie) {
-    let submitMovie = new Movie(movie.id,movie.Title,movie.Year,movie.Reviews,movie.Poster);
     let url = `${baseurl}/Movies/${movie.id}`;
 
-    const postData = this.safeStringify(submitMovie);
+    const postData = JSON.stringify(movie);
     console.log(`Submit Movie is ${postData}`);
 
     const response = await fetch(url, {

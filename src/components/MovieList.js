@@ -11,7 +11,7 @@ export default function MovieList(props) {
   //console.log(`Movies list sent from call is ${movies}`);
 
   for (let movie of movies) {
-    let element = <div className="col-md" key={movie.id}>
+    let element = <div className="col-lg-3" key={movie.id}>
         <MovieCard key={movie.id} movie={movie} handleReview={handleReview} />
       </div>;
     renderElements.push(element);
