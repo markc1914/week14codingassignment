@@ -5,7 +5,7 @@ export default class LocalMovieService {
   async all(){
     let url = `${baseurl}/Movies`;
     return fetch(url).then((results) => results.json()).then((data) => {
-      console.log(`Json returned as ${JSON.stringify(data)}`);
+      //console.log(`Json returned as ${JSON.stringify(data)}`);
       
        return data.map(movie => {
         return {

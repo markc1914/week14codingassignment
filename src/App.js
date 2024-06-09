@@ -8,22 +8,35 @@ const service = new LocalMovieService();
 
 function App() {
 
-  const [movies, setMovies] = useState([]);
+const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     reload();
   }, []);
 
   function reload() {
-  service.all().then((results) => {
-    console.log(`Service call returned : ${results}`);
-    setMovies(results);
-  });
-}
-  
+    service.all().then((results) => {
+      console.log(`Service call returned : ${results}`);
+      setMovies(results);
+    });
+  }
+
+
+  function handleReview(movie, e) {
+    console.log(`App.handleReview(${movie})`);
+    service.updateMovie(movie).then((success) => {
+      if (success) {
+        reload();
+      }
+    })
+  } 
+
   return (
-    <div className='contanier'>
-      <MovieList movies={movies}/>
+
+    <div className="container text-center">
+      <div className="row align-items-start">
+        <MovieList movies={movies} onReview={handleReview} />
+      </div>
     </div>
   );
 }
